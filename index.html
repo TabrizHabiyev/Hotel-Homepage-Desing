@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./PluginsJS/VegasSlider/vegas.min.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Hotel</title>
+</head>
+
+<body>
+    <!--Topbar start-->
+    <div id="slider">
+
+
+        <div id="topbar-container">
+            <div id="topbar">
+                <div class="contact">
+                    <ul>
+                        <li><a href="#">Phone: +1 (234) 567-890</a></li>
+                        <li><a href="#">Email: contact@inspiro-media.com</a></li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li class="social-facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social-twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="social-google"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li class="social-pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        <li class="social-vimeo"><a href="#"><i class="fab fa-vimeo"></i></a></li>
+                        <li class="social-linkedin"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li class="social-dribbble"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                        <li class="social-youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li class="social-rss"><a href="#"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Topbar son-->
+
+        <!--Header start-->
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark" aria-label="Main navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Offcanvas navbar</a>
+                <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Notifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Switch account</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                                aria-expanded="false">Settings</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--Header son-->
+
+        <section id="check">
+            <div class="right">
+
+                <div class="text-light text">
+                    <h2 class="text-medium no-margin text-colored text1">5 star Hotel</h2>
+                    <h2 class="text-lg no-margin text2">Wonderful Feelings</h2>
+                </div>
+            </div>
+
+            <div class="left">
+                <div class="book">
+                    <form action="" method="get">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Check in</label>
+                                    <div class="input-group">
+                                        <input name="fromDate" class="form-control" type="text">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="basic-addon2"><i
+                                                    class="fas fa-calendar"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Check out</label>
+                                    <div class="input-group">
+                                        <input name="fromDate" class="form-control" type="text">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="basic-addon2"><i
+                                                    class="fas fa-calendar"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-6">
+                                <div class="form-group">
+                                    <label>Adults</label>
+                                    <input type="number" min="1" max="10" value="" name="adults" placeholder="2">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-6">
+                                <div class="form-group">
+                                    <label>Children</label>
+                                    <input type="number" min="1" max="10" value="" name="children" placeholder="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label>Room type</label>
+                                    <select class="form-control" name="room_type" id="room_type">
+                                        <option value="">Select room type</option>
+                                        <option value="Single Room">Single Room</option>
+                                        <option value="Double Room">Double Room</option>
+                                        <option value="King double Room">King double Room</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <button class="btn btn-colored float-right">Check Avaliability</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--Welcome to hotel polo start-->
+    <section>
+        <div class="container welcome-polo">
+            <div class="text-center">
+                <h2 class="text-medium m-t-0">Welcome to Hotel POLO</h2>
+                <div class="seperator"><i class="fa fa-dot-circle-o"></i></div>
+                <p class="lead">Hotel “POLO” is a peaceful and well-equipped holiday hotel. Thanks to the favourable
+                    situation close to the beach, the woods and the village centre, it is an ideal hotel, where you will
+                    certainly feel at home.</p>
+            </div>
+            <div class="seperator"><i class="fa fa-check-circle-o"></i></div>
+            <div class="row m-t-60">
+                <div class="col-lg-3">
+                    <i class="fa fa-coffee fa-2x"></i>
+                    <h4>Restaurant</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form</p>
+                </div>
+                <div class="col-lg-3">
+                    <i class="fa fa-glass fa-2x"></i>
+                    <h4>Revolving Cocktail bar</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form</p>
+                </div>
+                <div class="col-lg-3">
+                    <i class="fa fa-plane fa-2x"></i>
+                    <h4>Free airport pick up service</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form</p>
+                </div>
+                <div class="col-lg-3">
+                    <i class="fa fa-star fa-2x"></i>
+                    <h4>5/5 Rating</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Welcome to hotel poli son-->
+
+
+    <!--Hotel rooms start-->
+    <section>
+        <div class="container rooms-start">
+            <div class="text-center m-b-40">
+                <h2 class="text-medium m-t-0">Hotel Rooms</h2>
+                <div class="seperator"><i class="fa fa-dot-circle-o"></i></div>
+                <p class="lead">Hotel “POLO” is a peaceful and well-equipped holiday hotel. Thanks to the favourable
+                    situation close to the beach, the woods and the village centre, it is an ideal hotel, where you will
+                    certainly feel at home.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 hotel-photos">
+                    <div class="room">
+                        <div class="room-image">
+                            <img src="./images/rooms-images/1.jpg" alt="#">
+                            <div class="room-title">Deluxe Room</div>
+                            <span class="room-badge">save 60%</span>
+                        </div>
+                        <div class="room-details">
+                            <p>Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare
+                                sem lacinia quam venenatis vestibulum.</p>
+                                <div class="justify">
+                                    <div class="float-left">
+                                        <h4>89$<small>/ Day</small></h4>
+                                    </div>
+                                    <div class="float-right">
+                                        <a href="#" class="btn btn-colored">Book</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 hotel-photos">
+                    <div class="room">
+                        <div class="room-image">
+                            <img src="./images/rooms-images/1.jpg" alt="#">
+                            <div class="room-title">Deluxe Room</div>
+                            <span class="room-badge">save 60%</span>
+                        </div>
+                        <div class="room-details">
+                            <p>Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare
+                                sem lacinia quam venenatis vestibulum.</p>
+                                <div class="justify">
+                                    <div class="float-left">
+                                        <h4>89$<small>/ Day</small></h4>
+                                    </div>
+                                    <div class="float-right">
+                                        <a href="#" class="btn btn-colored">Book</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 hotel-photos">
+                    <div class="room">
+                        <div class="room-image">
+                            <img src="./images/rooms-images/1.jpg" alt="#">
+                            <div class="room-title">Deluxe Room</div>
+                            <span class="room-badge">save 60%</span>
+                        </div>
+                        <div class="room-details">
+                            <p>Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare
+                                sem lacinia quam venenatis vestibulum.</p>
+                                <div class="justify">
+                                    <div class="float-left">
+                                        <h4>89$<small>/ Day</small></h4>
+                                    </div>
+                                    <div class="float-right">
+                                        <a href="#" class="btn btn-colored">Book</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 hotel-photos">
+                    <div class="room">
+                        <div class="room-image">
+                            <img src="./images/rooms-images/1.jpg" alt="#">
+                            <div class="room-title">Deluxe Room</div>
+                            <span class="room-badge">save 60%</span>
+                        </div>
+                        <div class="room-details">
+                            <p>Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare
+                                sem lacinia quam venenatis vestibulum.</p>
+                                <div class="justify">
+                                    <div class="float-left">
+                                        <h4>89$<small>/ Day</small></h4>
+                                    </div>
+                                    <div class="float-right">
+                                        <a href="#" class="btn btn-colored">Book</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 hotel-photos">
+                    <div class="room">
+                        <div class="room-image">
+                            <img src="./images/rooms-images/1.jpg" alt="#">
+                            <div class="room-title">Deluxe Room</div>
+                            <span class="room-badge">save 60%</span>
+                        </div>
+                        <div class="room-details">
+                            <p>Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare
+                                sem lacinia quam venenatis vestibulum.</p>
+                                <div class="justify">
+                                    <div class="float-left">
+                                        <h4>89$<small>/ Day</small></h4>
+                                    </div>
+                                    <div class="float-right">
+                                        <a href="#" class="btn btn-colored">Book</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 hotel-photos">
+                    <div class="room">
+                        <div class="room-image">
+                            <img src="./images/rooms-images/1.jpg" alt="#">
+                            <div class="room-title">Deluxe Room</div>
+                            <span class="room-badge">save 60%</span>
+                        </div>
+                        <div class="room-details">
+                            <p>Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare
+                                sem lacinia quam venenatis vestibulum.</p>
+                                <div class="justify">
+                                    <div class="float-left">
+                                        <h4>89$<small>/ Day</small></h4>
+                                    </div>
+                                    <div class="float-right">
+                                        <a href="#" class="btn btn-colored">Book</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 hotel-photos">
+                    <div class="room">
+                        <div class="room-image">
+                            <img src="./images/rooms-images/1.jpg" alt="#">
+                            <div class="room-title">Deluxe Room</div>
+                            <span class="room-badge">save 60%</span>
+                        </div>
+                        <div class="room-details">
+                            <p>Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare
+                                sem lacinia quam venenatis vestibulum.</p>
+                                <div class="justify">
+                                    <div class="float-left">
+                                        <h4>89$<small>/ Day</small></h4>
+                                    </div>
+                                    <div class="float-right">
+                                        <a href="#" class="btn btn-colored">Book</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 hotel-photos">
+                    <div class="room">
+                        <div class="room-image">
+                            <img src="./images/rooms-images/1.jpg" alt="#">
+                            <div class="room-title">Deluxe Room</div>
+                            <span class="room-badge">save 60%</span>
+                        </div>
+                        <div class="room-details">
+                            <p>Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare
+                                sem lacinia quam venenatis vestibulum.</p>
+                                <div class="justify">
+                                    <div class="float-left">
+                                        <h4>89$<small>/ Day</small></h4>
+                                    </div>
+                                    <div class="float-right">
+                                        <a href="#" class="btn btn-colored">Book</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+    </section>
+    <!--Hotel rooms son-->
+
+
+    <!--Section 3 start-->
+    <section>
+        <div class="container event-contain">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="text-medium">Events</div>
+                    <p class="lead">
+                        Ready to Purchase POLO Template?
+                    </p>
+                    <div class="tabs p-r-20">
+                        <ul class="nav nav-tabs nav-justified text-left" id="myTab">
+                            <li class="nav-item"><a href="#day1" class="nav-link active" data-toggle="tab"
+                                    aria-selected="true"><strong>Day 01</strong> <br>17.10.2015</a></li>
+                            <li class="nav-item"><a href="#day2" class="nav-link" data-toggle="tab"><strong>Day
+                                        02</strong> <br>18.10.2015</a></li>
+                            <li class="nav-item"><a href="#day3" class="nav-link" data-toggle="tab"><strong>Day
+                                        03</strong> <br>19.10.2015</a></li>
+                            <li class="nav-item"><a href="#day4" class="nav-link" data-toggle="tab"><strong>Day
+                                        04</strong> <br>20.10.2015</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="day1" class="tab-pane fade show active">
+                                <div class="p-10 border-bottom">
+                                    <span><i class="far fa-clock"></i> 09:00 - 10:45</span>
+                                    <h5>Juna Doe</h5>
+                                    <p class="m-b-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et
+                                        quas molestias excepturi</p>
+                                </div>
+                                <div class="p-10 border-bottom">
+                                    <span><i class="far fa-clock"></i> 11:00 - 11:45</span>
+                                    <h5>Alea Grande</h5>
+                                    <p class="m-b-0">Et harum quidem rerum facilis est et expedita distinctio. At
+                                        vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                                </div>
+                                <div class="p-10 border-bottom">
+                                    <span><i class="far fa-clock"></i> 08:00 - 08:45</span>
+                                    <h5>John Smith</h5>
+                                    <p class="m-b-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        blanditiis</p>
+                                </div>
+                            </div>
+                            <div id="day2" class="tab-pane fade">
+                                <div class="p-10 border-bottom">
+                                    <span><i class="far fa-clock"></i> 11:00 - 11:45</span>
+                                    <h5>Alea Grande</h5>
+                                    <p class="m-b-0">Et harum quidem rerum facilis est et expedita distinctio. At
+                                        vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                                </div>
+                                <div class="p-10 border-bottom">
+                                    <span><i class="far fa-clock"></i> 08:00 - 08:45</span>
+                                    <h5>John Smith</h5>
+                                    <p class="m-b-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        blanditiis</p>
+                                </div>
+                                <div class="p-10 border-bottom">
+                                    <span><i class="far fa-clock"></i> 09:00 - 10:45</span>
+                                    <h5>Juna Doe</h5>
+                                    <p class="m-b-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et
+                                        quas molestias excepturi</p>
+                                </div>
+                            </div>
+                            <div id="day3" class="tab-pane fade">
+                                <div class="p-10 border-bottom">
+                                    <span><i class="far fa-clock"></i> 08:00 - 08:45</span>
+                                    <h5>John Smith</h5>
+                                    <p class="m-b-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        blanditiis</p>
+                                </div>
+                                <div class="p-10 border-bottom">
+                                    <span><i class="far fa-clock"></i> 11:00 - 11:45</span>
+                                    <h5>Alea Grande</h5>
+                                    <p class="m-b-0">Et harum quidem rerum facilis est et expedita distinctio. At
+                                        vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                                </div>
+                                <div class="p-10 border-bottom">
+                                    <span><i class="far fa-clock"></i> 08:00 - 08:45</span>
+                                    <h5>John Smith</h5>
+                                    <p class="m-b-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        blanditiis</p>
+                                </div>
+                                <div class="p-10 border-bottom">
+                                    <span><i class="far fa-clock"></i> 09:00 - 10:45</span>
+                                    <h5>Juna Doe</h5>
+                                    <p class="m-b-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et
+                                        quas molestias excepturi</p>
+                                </div>
+                            </div>
+                            <div id="day4" class="tab-pane fade">
+                                <div class="p-10 border-bottom">
+                                    <span><i class="far fa-clock"></i> 11:00 - 11:45</span>
+                                    <h5>Alea Grande</h5>
+                                    <p class="m-b-0">Et harum quidem rerum facilis est et expedita distinctio. At
+                                        vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                                </div>
+                                <div class="p-10 border-bottom">
+                                    <span><i class="far fa-clock"></i> 08:00 - 08:45</span>
+                                    <h5>John Smith</h5>
+                                    <p class="m-b-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        blanditiis</p>
+                                </div>
+                                <div class="p-10 border-bottom">
+                                    <span><i class="far fa-clock"></i> 09:00 - 10:45</span>
+                                    <h5>Juna Doe</h5>
+                                    <p class="m-b-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et
+                                        quas molestias excepturi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="text-medium">Appointment</div>
+                    <p class="lead">
+                        Register for this next Event
+                    </p>
+                    <form class="widget-contact-form" novalidate="" action="include/contact-form.php" role="form"
+                        method="post">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" aria-required="true" name="widget-contact-form-name"
+                                class="form-control required name" placeholder="Enter your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" aria-required="true" required="" name="widget-contact-form-email"
+                                class="form-control required email" placeholder="Enter your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Phone Number</label>
+                            <input type="text" aria-required="true" name="widget-contact-form-phone"
+                                class="form-control required" placeholder="Enter your Phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea type="text" name="widget-contact-form-message" rows="7"
+                                class="form-control required" placeholder="Enter your Message"></textarea>
+                        </div>
+                        <div class="form-group text-center">
+                            <button class="btn button-light" type="submit" id="form-submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section 3 stop-->
+
+    <!--Map Start-->
+    <div class="mapouter">
+        <div class="gmap_canvas"><iframe width="100%" height="250" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=code%20accademy%20az&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+    </div>
+    <!--Map son-->
+    <!--Footer start-->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="widget">
+                            <div class="widget-title">Polo HTML5 Template</div>
+                            <p class="mb-5">Built with love in Fort Worth, Texas, USA<br>
+                                All rights reserved. Copyright © 2019. INSPIRO.</p>
+                            <a href="https://themeforest.net/item/polo-responsive-multipurpose-html5-template/13708923"
+                                class="btn btn-inverted" target="_blank">Purchase Now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="widget">
+                                    <div class="widget-title">Discover</div>
+                                    <ul class="list">
+                                        <li><a href="#">Features</a></li>
+                                        <li><a href="#">Layouts</a></li>
+                                        <li><a href="#">Corporate</a></li>
+                                        <li><a href="#">Updates</a></li>
+                                        <li><a href="#">Pricing</a></li>
+                                        <li><a href="#">Customers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="widget">
+                                    <div class="widget-title">Features</div>
+                                    <ul class="list">
+                                        <li><a href="#">Layouts</a></li>
+                                        <li><a href="#">Headers</a></li>
+                                        <li><a href="#">Widgets</a></li>
+                                        <li><a href="#">Footers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="widget">
+                                    <div class="widget-title">Pages</div>
+                                    <ul class="list">
+                                        <li><a href="#">Portfolio</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Shop</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="widget">
+                                    <div class="widget-title">Support</div>
+                                    <ul class="list">
+                                        <li><a href="#">Help Desk</a></li>
+                                        <li><a href="#">Documentation</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-content">
+            <div class="container">
+                <div class="copyright-text text-center">© 2019 POLO - Responsive Multi-Purpose HTML5 Template. All
+                    Rights Reserved.<a href="//www.inspiro-media.com" target="_blank" rel="noopener"> INSPIRO</a> </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer Son-->
+
+    <!--Slider script-->
+    <script type="text/javascript" src="./PluginsJS/Jquery-2.1.3/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="./PluginsJS/VegasSlider/vegas.js"></script>
+    <script>
+        $(function () {
+            $('#slider').vegas({
+                slides: [
+                    { src: './images/slider-images/3.jpg' },
+                    { src: './images/slider-images/4.jpg' }
+                ]
+            });
+        });
+    </script>
+    <!--Slider Script son-->
+</body>
+
+</html>
